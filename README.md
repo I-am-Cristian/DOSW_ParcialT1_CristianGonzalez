@@ -85,8 +85,66 @@ Para Poder: Participar activamente y adquir mayor conocimiento sobre el tema o a
 
 ![alt text](docs/uml/CasoEstudiante.png)
 
+## 5. Especifique los 2 requerimientos funcionales seleccionados en el punto anterior . (Añadir los documentos al repositorio, en la carpeta de requerimientos).
+
+Se encuentra en (docs/requirements/requirements.md)
+
+## 6. Seleccione un requerimiento asociado al patrón y realice la descomposición de tareas asociadas: Épica - Historia de Usuario - Al menos 3 tareas.
+
+### 1. Épica:
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | EP-01 |
+| **Título** | Crear eventos por cada tipo (conferencias, talleres y hackathons) |
+| **Descripción** | *Es necesaria esta epica ya que es el corazon de la app, porque nos permite crear los eventos academicos del campus (conferencias, talleres y hackathons) * |
+| **Stakeholder** | *Administrativos, Profesores y Estudiantes* |
+
+### 2. Historias de usuario:
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | HU-01 |
+| **Título** | Crear un evento de tipo Conferencia|
+| **Descripción** | *Como [Profesor] quiero [Crear un evento de tipo conferencia] para [que los estudiantes conozcan mas acerca de algun tema en especifico o aprendan nuevos temas que podrian ser de su interes]* |
+| **Prioridad** | *[Alta]* |
+| **Estimación** | *5* |
+
+### 3. Tareas:
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | TR-01 |
+| **Título** | Buscar tema de interes para crear una conferencia|
+| **ID de la Historia de Uso asociada** | HU-01 |
+| **Descripción** | *Como [Profesor] quiero [Buscar tema de interes para crear una conferencia] para [que los estudiantes se encuentren atraidos por el tema y asistan a la conferencia]* |
+| **Tareas requisito** | *No Aplica* |
 
 
+| Campo | Descripción |
+|------|-------------|
+| **ID** | TR-02 |
+| **Título** | Buscar conferencista que sepa del tema |
+| **ID de la Historia de Uso asociada** | HU-01 |
+| **Descripción** | *Como [Profesor] quiero [Buscar conferencista que sepa del tema] para [que las charlas sean mucho mas entretenidas, dinamicas y cautivadora ya que una persona que tiene dominio del tema o estudios relacionados a este puede enseñarlo de forma clara y simple]* |
+| **Tareas requisito** | *TR-01* |
+
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | TR-03 |
+| **Título** | Revisar horas, horarios de estudiantes y profesores  |
+| **ID de la Historia de Uso asociada** | HU-01 |
+| **Descripción** | *Como [Profesor] quiero [Revisar horas, horarios de estudiantes y profesores] para [que pueda asistir la mayor cantidad de gente al evento y acomodar la hora del conferencista]* |
+| **Tareas requisito** | *TR-02* |
+
+## 7. Realice un diagrama de clases que permita entender su solución. Mencione, ¿cuáles principios SOLID está aplicando? ¿Y por qué?
+
+En este caso tenemos principios como:
+
+S: cada clase se hace cargo de sus tareas y resposabilidades.
+O: Es facil de extender a mas eventos 
+I: Es mejor tener mas cantidad de interfaces que una clase que tenga muchas
 
 
 

@@ -1,45 +1,43 @@
 # 📄 Requerimientos del Sistema
 
-## 1. Sistema
+## 1. Lista general de requerimientos
 
-* Nombre del sistema:
-* Objetivo: El sistema tiene como objetivo: (Indicar el objetivo del sistema de Bankify)
+El sistema de EventSync tiene los siguientes requerimientos (descripción a alto nivel):
 
-## 2. Problema a resolver
-< Describir el problema principal a resolver del Caso de Estudio>
+### 1.1 Requerimientos funcionales
 
-## 3. Diagrama de Contexto
+El sistema de EventSync debe tener la capacidad de:
 
-### 3.1 Diagrama
+1. Crear eventos por cada tipo
+2. Aplicar reglas de negocio por los diferentes eventos
+3. Notificar automaticamente los cambios relevantes del evento
+4. Autenticar usuarios acorde su rol en la organizacion
+5. Evitar inscripciones a eventos que ya cuentan con el cupo lleno o permitir inscripciones a los que cumplan los requisitos
 
-Relacionar imagen del diagrama de contexto realizado
+## 2. Diagramas de caso de uso
 
-### 3.2 Actores
+### 2.1 Requerimiento Funcional 1
 
-<En el siguiente cuadro, mapee los actores o roles identificados del sistema>
-<El primer rol es de ejemplo>
+| Campo | Descripción |
+|------|-------------|
+| **ID** | RF-01 |
+| **Nombre del requerimiento** | Crear eventos por cada tipo |
+| **Descripción** | *El sistema debe Crear eventos de tipo (conferencias, talleres y hackathons)*  |
+| **Precondiciones** | *Para que el sistema cumpla con este requerimiento, EventSync debe tener previamente todos los requisitos de registro llenos* |
+| **Actor** | *Profesor* |
+| **Flujo principal** | 1. El actor crea un evento <br>2. El sistema revisa que se cumplan requerimientos <br>3. El sistema notifica el evento |
+| **Diagrama de caso de uso** | ![alt text](/docs/uml/CasoProfesor.png)|
+| **Poscondiciones** | *Se espera como resultado un evento de cualquier tipo* |
 
-| Actor / Rol                        |          Descripción              |
-|------------------------------------|:---------------------------------:|
-| Usuario final                      | Cliente del sistema de Bankify    |
-|                                    |                                   |
+### 2.2 Requerimiento Funcional 2
 
-### 3.3 Sistemas externos
-
-<En el siguiente cuadro, mapee los sistemas externos que interactúan con el sistema de Bankify>
-<El primer sistema es de ejemplo>
-
-| Sistema                            |                                    Descripción                                        |
-|------------------------------------|:-------------------------------------------------------------------------------------:|
-| Reportes                           | Sistema que genera los reportes tributarios de cada cliente del sistema de Bankify    |
-|                                    |                                                                                       |
-
-## 4. Alcance del sistema
-   
-### 4.1 Dentro del sistema
-
-Funciones que el sistema sí realiza (Relacione al menos 4).
-
-### 4.2 Fuera del sistema
-
-Funciones que no realiza (Relacione al menos 3).
+| Campo | Descripción |
+|------|-------------|
+| **ID** | RF-02 |
+| **Nombre del requerimiento** | Incribir una conferencia |
+| **Descripción** | *El sistema debe permitir la incripcion a los eventos* |
+| **Precondiciones** | *Para que el sistema cumpla con este requerimiento, EventSync debe tener previamente el evento creado y el tipo de evento que es.* |
+| **Actor** | *Estudiante* |
+| **Flujo principal** | 1. El actor debe inscribirse al evento <br>2. El sistema debe validar la incripcion <br>3. El sistema notifica sobre la inscripcion |
+| **Diagrama de caso de uso** | ![alt text](/docs/uml/CasoEstudiante.png)|
+| **Poscondiciones** | *Se espera como resultado que el estudiante tenga acceso a el evento y pueda asistir* |
