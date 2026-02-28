@@ -143,8 +143,11 @@ Se encuentra en (docs/requirements/requirements.md)
 En este caso tenemos principios como:
 
 S: cada clase se hace cargo de sus tareas y resposabilidades.
-O: Es facil de extender a mas eventos 
-I: Es mejor tener mas cantidad de interfaces que una clase que tenga muchas
+
+O: Es facil de extender a mas eventos.
+
+I: Es mejor tener mas cantidad de interfaces que una clase que tenga muchas.
+
 
 
 
